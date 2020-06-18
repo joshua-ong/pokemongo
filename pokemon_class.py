@@ -13,7 +13,7 @@ import json
 ###
 class pokemon():
     # default constructor
-    def __init__(self,path):
+    def __init__(self, path):
         """CSV FILE"""
         # with open(path, newline='') as csvfile:
         #     spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
@@ -29,11 +29,29 @@ class pokemon():
         with open(path) as f:
             data = json.load(f)
             print(data)
+        self.name = data["name"]
+        self.type = data["type"]
+        self.health = data["health"]
+        self.qm = data["qm"]
+        self.cm = data["cm"]
         self.energy = 0
 
     # a method for printing data members
-    def print_Geek(self):
-        print("lame")
+    def damage_update(self, qm, debug=False):
+        dmg = qm[0][2]
+        if (debug):
+            print(self.health)
+        self.health = self.health - dmg
+        if (debug):
+            print(self.health)
+
+    def energy_update(self, debug=False):
+        eng = self.qm[0][1]
+        if (debug):
+            print("energy: " + self.energy)
+        self.energy = self.energy + eng
+        if (debug):
+            print("energy: " + self.energy)
 
 # path = "pokemon/3.json"
 # a = pokemon(path)
