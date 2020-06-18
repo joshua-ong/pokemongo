@@ -1,0 +1,7 @@
+{
+"name":"Venusaur",
+"type": ["grass", "poison"],
+"health": 123 ,
+"qm": [["grass",10,14],["grass",7,15.6]],
+"cm":[["grass",38.5,110],["poison",80,21.7]]
+}

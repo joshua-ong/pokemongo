@@ -1,0 +1,5 @@
+Venusaur,
+[grass, poison],
+123,
+[[grass,10,14],[grass,7,15.6]],
+[[grass,38.5,110],[poison,80,21.7]]

@@ -1,0 +1,7 @@
+{
+"name":"Blastoise",
+"type": ["water"],
+"health": 130 ,
+"qm": [["water",10,12],["dark",8,12]],
+"cm":[["ice",15.2,90],["water",30.3,130]]
+}

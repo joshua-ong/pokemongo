@@ -1,0 +1,7 @@
+{
+"name":"Charzard",
+"type": ["fire", "fly"],
+"health": 117 ,
+"qm": [["fly",8.3,14],["fire",9.1,15.3]],
+"cm":[["dragon",19.4,50],["fire",23.8,140]]
+}
